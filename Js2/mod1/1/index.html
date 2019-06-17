@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 
 <body>
@@ -13,14 +13,25 @@
     <button id="botao">TOCA NO BOTÃO</button>
     <div id="espaco"></div>
 
-   <script>
+    <script>
 
-       var Btn = document.getElementById("botao");
-       var Esp = document.getElementById("espaco");
-       
-       
+        var Btn = document.getElementById("botao");
+        var Esp = document.getElementById("espaco");
 
-   </script>
+        Btn.onclick = function () {
+
+            var EspE = document.createElement("div");
+
+            EspE.style.width = "100px";
+            EspE.style.height = "100px";
+            EspE.style.backgroundColor = "#F00";
+
+            Esp.appendChild(EspE);
+        };
+
+
+
+    </script>
 
 </body>
 
