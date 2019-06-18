@@ -2,30 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 
 <body>
- <ul></ul>
+    <ul></ul>
+    <input type="text" name="nome">
+    <button onclick="adicionar()">Adicionar</button>
 
- <script>
-   var nomes = ['Diego', 'Gabriel', 'Lucas'];
-   var listE = document.querySelector('ul');
+    <script>
+        var nomes = ['Diego', 'Gabriel', 'Lucas'];
+        var listE = document.querySelector('ul');
+        var inputE = document.querySelector('input');
 
-   for (nome of nomes) {
+        for (nome of nomes) {
 
-     var liE = document.createElement('li');
-     var textE = document.createTextNode(nome);
+            var liE = document.createElement('li');
+            var textE = document.createTextNode(nome);
 
 
-     liE.appendChild(textE);
-     listE.appendChild(liE);
+            liE.appendChild(textE);
+            listE.appendChild(liE);
 
-   }
- </script>
+        }
+    </script>
 </body>
 
 </html>
