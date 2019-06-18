@@ -18,16 +18,15 @@
         var listE = document.querySelector('ul');
         var inputE = document.querySelector('input');
 
-        for (nome of nomes) {
+        function addItem(text) {
 
             var liE = document.createElement('li');
-            var textE = document.createTextNode(nome);
-
+            var textE = document.createTextNode(text);
 
             liE.appendChild(textE);
             listE.appendChild(liE);
-
         }
+
         function adicionar() {
 
             addItem(inputE.value);
